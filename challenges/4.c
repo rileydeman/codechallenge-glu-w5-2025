@@ -9,11 +9,13 @@ int pyramid() {
 
     if(scanf("%d", &height) != 1) {
         printf("%s\n", "ERROR: Invalid input at the first input. Please enter an integer.\n");
+        height = 0;
         pyramid();
     }
 
     if (height < 3 || height > 20) {
         printf("ERROR: Please fill in a number between 3 and 20.\n");
+        height = 0;
         pyramid();
     }
 
