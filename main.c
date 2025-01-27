@@ -5,6 +5,7 @@
 #include "challenges/4.c"
 #include "challenges/5.c"
 #include "challenges/6.c"
+#include "challenges/8.c"
 
 int main() {
     printf("GLU challenges week 5 2025\n");
@@ -32,6 +33,8 @@ int main() {
         stepCounter();
     } else if (challenge == 6) {
         checkBrackets();
+    } else if (challenge == 8) {
+        morse();
     } else {
         char message[50];
         sprintf(message, "ERROR: Challenge %d not found!", challenge);
