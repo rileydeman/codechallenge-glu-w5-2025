@@ -16,7 +16,7 @@ int countUpperCase(const char *string) {
 
 int forbiddenChars(const char *string) {
   int count = 0;
-  char *forbiddenChars = "0123456789!@#$%^&*()[]{}?<>.,|/-_";
+  char *forbiddenChars = "0123456789!@#$%^&*()[]{}?<>.,|/-_ ";
 
   for (int i = 0; i < strlen(string); i++) {
     for (int j = 0; j < strlen(forbiddenChars); j++) {
