@@ -12,3 +12,6 @@ dist
 .env
 config.ini
 .idea/*
+cmake-build-debug/*
+CMakeLists.txt
+a.exe
