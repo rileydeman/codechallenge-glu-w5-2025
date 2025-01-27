@@ -10,7 +10,7 @@ int calc() {
     printf("%s\n", "Please enter a number: ");
 
     if (scanf("%d", &num1) != 1) {
-        printf("Error: Invalid input at the first input. Please enter an integer.\n");
+        printf("ERROR: Invalid input at the first input. Please enter an integer.\n");
         return 422;
     }
 
@@ -19,7 +19,7 @@ int calc() {
     printf("%s\n", message1);
 
     if (scanf("%d", &num2) != 1) {
-        printf("Error: Invalid input at the second input. Please enter an integer.\n");
+        printf("ERROR: Invalid input at the second input. Please enter an integer.\n");
         return 422;
     }
 
