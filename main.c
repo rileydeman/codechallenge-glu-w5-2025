@@ -2,6 +2,7 @@
 #include "challenges/1.c"
 #include "challenges/2.c"
 #include "challenges/3.c"
+#include "challenges/4.c"
 
 int main() {
     printf("RILEYDEMAN C PROGRAM\n");
@@ -21,8 +22,10 @@ int main() {
         calc();
     } else if (challenge == 2) {
         countChars();
-    } else if(challenge == 3) {
+    } else if (challenge == 3) {
         readFile();
+    } else if (challenge == 4) {
+        pyramid();
     } else {
         char message[50];
         sprintf(message, "ERROR: Challenge %d not found!", challenge);
