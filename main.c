@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "challenges/1.c"
 #include "challenges/2.c"
+#include "challenges/3.c"
 
 int main() {
     printf("RILEYDEMAN C PROGRAM\n");
@@ -20,6 +21,8 @@ int main() {
         calc();
     } else if (challenge == 2) {
         countChars();
+    } else if(challenge == 3) {
+        readFile();
     } else {
         char message[50];
         sprintf(message, "ERROR: Challenge %d not found!", challenge);
