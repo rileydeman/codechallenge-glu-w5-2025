@@ -1,10 +1,13 @@
 #include <stdio.h>
+#include <stdlib.h>
+
 #include "challenges/1.c"
 #include "challenges/2.c"
 #include "challenges/3.c"
 #include "challenges/4.c"
 #include "challenges/5.c"
 #include "challenges/6.c"
+#include "challenges/7.c"
 #include "challenges/8.c"
 
 int main() {
@@ -33,6 +36,8 @@ int main() {
         stepCounter();
     } else if (challenge == 6) {
         checkBrackets();
+    } else if (challenge == 7) {
+        bills();
     } else if (challenge == 8) {
         morse();
     } else {
@@ -49,25 +54,18 @@ int main() {
     if (answer == 'y') {
 
         #ifdef _WIN32
-            // printf("Operating System: Windows (32-bit or 64-bit)\n");
-            system("cls");  // Clear console on Windows
+            system("cls");
         #elif __linux__
-            // printf("Operating System: Linux\n");
-            system("clear");  // Clear console on Linux
+            system("clear");
         #elif __APPLE__
-            // printf("Operating System: macOS\n");
-            system("clear");  // Clear console on macOS
+            system("clear");
         #elif __unix__
-            // printf("Operating System: Unix\n");
-            system("clear");  // Clear console on Unix
+            system("clear");
         #elif __FreeBSD__
-            // printf("Operating System: FreeBSD\n");
-            system("clear");  // Clear console on FreeBSD
+            system("clear");
         #elif __ANDROID__
-            // printf("Operating System: Android\n");
-            system("clear");  // Clear console on Android
+            system("clear");
         #else
-            // printf("Operating System: Unknown\n");
             printf("Cannot clear console: Unknown OS\n");
         #endif
 
