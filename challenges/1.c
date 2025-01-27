@@ -4,7 +4,7 @@ int calc() {
     int num1;
     int num2;
 
-    printf("%s\n", "CALCULATOR");
+    printf("\n%s\n", "CALCULATOR");
     printf("\n");
 
     printf("%s\n", "Please enter a number: ");

@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int readFile() {
-    printf("%s\n", "READ FILE");
+    printf("\n%s\n", "READ FILE");
     printf("%s\n", "This challenge is to read out a .txt file, which is located in ./challenges/assets/c3/input.txt in this project\n");
 
     FILE *fptr;

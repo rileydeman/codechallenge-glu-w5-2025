@@ -5,7 +5,7 @@ char decodeMorse(const char morse[]) {
 }
 
 int morse() {
-  printf("%s\n", "DECODE MORSE\n");
+  printf("\n%s\n", "DECODE MORSE\n");
 
   char morseMsg[10000];
 

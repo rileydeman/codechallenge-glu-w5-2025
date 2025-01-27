@@ -32,7 +32,7 @@ int forbiddenChars(const char *string) {
 int countChars() {
   char msg[10000];
 
-  printf("%s\n", "COUNT CHARACTERS IN A STRING");
+  printf("\n%s\n", "COUNT CHARACTERS IN A STRING");
   printf("\n");
 
   while (getchar() != '\n' && getchar() != EOF);

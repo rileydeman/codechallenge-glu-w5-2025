@@ -2,7 +2,7 @@
 #include <string.h>
 
 int stepCounter() {
-  printf("%s\n", "STEP COUNTER\n");
+  printf("\n%s\n", "STEP COUNTER\n");
 
   char input[5000];
 

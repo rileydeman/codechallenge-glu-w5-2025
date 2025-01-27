@@ -2,7 +2,7 @@
 
 
 int checkBrackets() {
-  printf("%s\n", "BRACKETS CHECKER\n");
+  printf("\n%s\n", "BRACKETS CHECKER\n");
 
   char code[1000];
 

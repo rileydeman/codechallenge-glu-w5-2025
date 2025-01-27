@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int pyramid() {
-    printf("%s\n", "PYRAMID\n");
+    printf("\n%s\n", "PYRAMID\n");
 
     int height;
 

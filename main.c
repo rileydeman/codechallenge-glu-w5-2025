@@ -41,4 +41,36 @@ int main() {
         printf(message);
         main();
     }
+
+    printf("\n Do you want to restart the program? (y/n) \n");
+    char answer;
+    scanf(" %c", &answer);
+
+    if (answer == 'y') {
+
+        #ifdef _WIN32
+            // printf("Operating System: Windows (32-bit or 64-bit)\n");
+            system("cls");  // Clear console on Windows
+        #elif __linux__
+            // printf("Operating System: Linux\n");
+            system("clear");  // Clear console on Linux
+        #elif __APPLE__
+            // printf("Operating System: macOS\n");
+            system("clear");  // Clear console on macOS
+        #elif __unix__
+            // printf("Operating System: Unix\n");
+            system("clear");  // Clear console on Unix
+        #elif __FreeBSD__
+            // printf("Operating System: FreeBSD\n");
+            system("clear");  // Clear console on FreeBSD
+        #elif __ANDROID__
+            // printf("Operating System: Android\n");
+            system("clear");  // Clear console on Android
+        #else
+            // printf("Operating System: Unknown\n");
+            printf("Cannot clear console: Unknown OS\n");
+        #endif
+
+        main();
+    }
 }
