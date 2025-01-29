@@ -26,7 +26,7 @@ int calc() {
     int num3 = num1 + num2;
 
     char message2[50];
-    sprintf(message2, "The answer is %d", num3);
+    sprintf(message2, "The answer to %d + %d is %d", num1, num2, num3);
     printf("%s\n", message2);
 
     return 200;

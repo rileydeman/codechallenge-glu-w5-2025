@@ -9,6 +9,7 @@
 #include "challenges/6.c"
 #include "challenges/7.c"
 #include "challenges/8.c"
+#include "challenges/9.c"
 
 int main() {
     printf("GLU challenges week 5 2025\n");
@@ -23,6 +24,10 @@ int main() {
         printf("ERROR: Invalid input at the get challenge question. Please enter an integer.\n");
         return 422;
     }
+
+    char line[100] = "===============================================";
+
+    printf("\n%s\n", line);
 
     if (challenge == 1) {
         calc();
@@ -40,6 +45,8 @@ int main() {
         bills();
     } else if (challenge == 8) {
         morse();
+    } else if (challenge == 9) {
+        checkClosest();
     } else {
         char message[50];
         sprintf(message, "ERROR: Challenge %d not found!", challenge);
@@ -47,7 +54,11 @@ int main() {
         main();
     }
 
-    printf("\n Do you want to restart the program? (y/n) \n");
+    printf("\n%s\n", line);
+
+    while (getchar() != '\n' && getchar() != EOF);
+
+    printf("\n> Do you want to restart the program? (y/n) \n> ");
     char answer;
     scanf(" %c", &answer);
 
